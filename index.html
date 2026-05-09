@@ -985,8 +985,7 @@
   footer {
     background: #111827;
     color: rgba(255,255,255,0.5);
-    padding: 32px 24px;
-    padding-bottom: calc(120px + env(safe-area-inset-bottom));
+    padding: 32px 24px 160px;
     text-align: center;
   }
 
@@ -1022,19 +1021,20 @@
     z-index: 99;
     background: var(--navy);
     border-top: 1px solid rgba(201,168,76,0.2);
-    padding: 12px 24px;
-    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+    padding: 10px 16px 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 8px;
   }
 
   .float-cta-text {
-    font-size: 12px;
+    font-size: 11px;
     color: rgba(255,255,255,0.7);
     line-height: 1.4;
     white-space: nowrap;
+    flex-shrink: 1;
+    min-width: 0;
   }
 
   .float-cta-text strong {
@@ -1446,7 +1446,22 @@
     <div class="footer-info">
       〒410-0048 静岡県沼津市新宿町 2番地の7 1階<br>
       TEL: 0120-373-521 / 055-923-6026　|　info@hanaemi.mobi<br>
-      <a href="https://lin.ee/j5Z1mJ6" target="_blank" style="color:#06C755; text-decoration:none;">📱 LINE公式アカウントで相談する</a>
+      <a href="https://lin.ee/j5Z1mJ6" target="_blank" style="
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 12px;
+        background: #06C755;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 14px 32px;
+        border-radius: 4px;
+        text-decoration: none;
+      ">
+        <svg width="16" height="16" viewBox="0 0 40 40" fill="none"><path d="M20 4C11.163 4 4 10.477 4 18.2c0 4.017 2.14 7.587 5.487 9.93-.24.868-.87 3.14-.997 3.628-.157.608.222.6.468.437.192-.128 3.062-2.077 4.303-2.916.883.124 1.79.188 2.739.188 8.837 0 16-6.477 16-14.2C36 10.477 28.837 4 20 4z" fill="white"/></svg>
+        LINEで相談する
+      </a>
     </div>
     <div class="footer-copy">
       © 司法書士法人はなえみ All Rights Reserved.
@@ -1460,13 +1475,7 @@
     <strong>無料相談受付中｜秘密厳守</strong>
     まずはお気軽にご連絡ください
   </div>
-  <div class="float-cta-btns">
-    <a href="https://lin.ee/j5Z1mJ6" target="_blank" class="float-btn-line">
-      <svg width="15" height="15" viewBox="0 0 40 40" fill="none"><path d="M20 4C11.163 4 4 10.477 4 18.2c0 4.017 2.14 7.587 5.487 9.93-.24.868-.87 3.14-.997 3.628-.157.608.222.6.468.437.192-.128 3.062-2.077 4.303-2.916.883.124 1.79.188 2.739.188 8.837 0 16-6.477 16-14.2C36 10.477 28.837 4 20 4z" fill="white"/></svg>
-      LINEで相談
-    </a>
-    <a href="tel:0120373521" class="float-btn">📞 無料相談</a>
-  </div>
+  <a href="tel:0120373521" class="float-btn">📞 無料相談</a>
 </div>
 
 </body>
